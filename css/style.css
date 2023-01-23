@@ -1,4 +1,4 @@
-root{
+:root{
     --blue-2: #b3dbff;
     --blue-4: #47afff;
     --blue-5: #0095f6;
@@ -19,6 +19,7 @@ root{
     --fds-black-alpha-50: rgba(0, 0, 0, 0.5);
     --fds-black-alpha-60: rgba(0, 0, 0, 0.6);
     --fds-black-alpha-80: rgba(0, 0, 0, 0.8);
+    --tes : red;
 }
 
 body {
@@ -31,44 +32,90 @@ body {
     margin-top: -12px;
     margin-left: 12px;
     position: fixed;
-    border-right: 1px solid black;
-    height: 100%;
+    height: 105%;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
     width: 235px;
 }
-
+.kiri .nav-kiri {
+    width: 235px;
+}
 .kiri .nav-kiri .logo img {
     width: 8.3rem;
     height: 8.3rem;
 }
 
 .kiri .icon-nav {
-    margin-top: -35px;
-    margin-left: 12px;
+    margin: -35px 0 0 1px;
+    width: 12rem;
 }
 
-.kiri .icon-nav .icon {
-    margin-top: 27px;
-  
+.kiri .icon-nav .icon,
+.kiri .nav-more {
+    margin-top: 8px;
+    position: relative;
+    width: 12rem;
+    padding: .8rem;
 }
-.kiri .icon-nav .icon img {
-    width: 23px;
-    height: 23px;
+.kiri .icon-nav .icon img,
+.kiri .nav-more img{
+    width: 21px;
+    height: 21px;
+    margin-left: .1rem;
+   
 }
-.kiri .icon-nav .icon span {
-    padding: .7em;
-    font-size: 1.1em;
+
+.kiri .icon-nav .profile img {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.kiri .icon-nav .icon span,
+.kiri .nav-more span {
+    padding-left: .7em;
+    font-size: 1.2em;
+    position: absolute;
+    padding-top: .1em;
 }
 
 .kiri .icon-nav .active span {
     font-size: 1.1em;
     font-weight: bolder;
-
 }
 
 .kiri .nav-more {
-    margin-top: 70px;
+    margin-top: 30px;
+    position: relative;
 }
 
 .kiri .nav-more span {
     font-size: 1.1em;
+}
+
+.kiri .icon-nav .icon:hover,
+.kiri .nav-more:hover {
+    background: var(--fds-black-alpha-05);
+    border-radius: 20px;
+    cursor: pointer;
+    
+
+}
+
+.kiri .icon-nav .icon:hover img,
+.kiri .nav-more:hover img {
+ 
+    animation: zoomin .1s forwards;
+}
+
+/* animations */
+
+@keyframes zoomin {
+    
+    0% {
+      height: 0;
+    }
+    100% {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
 }
