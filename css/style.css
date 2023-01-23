@@ -19,16 +19,18 @@
     --fds-black-alpha-50: rgba(0, 0, 0, 0.5);
     --fds-black-alpha-60: rgba(0, 0, 0, 0.6);
     --fds-black-alpha-80: rgba(0, 0, 0, 0.8);
-    --tes : red;
 }
 
 body {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
 
+}
+.container {
+    display: flex;
+    flex-direction: row;
+}
 .kiri {
     display: flex;
-    float: left;
     margin-top: -12px;
     margin-left: 12px;
     position: fixed;
@@ -119,3 +121,4 @@ body {
         width: 1.5rem;
     }
 }
+
