@@ -22,5 +22,53 @@ root{
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.kiri {
+    display: flex;
+    float: left;
+    margin-top: -12px;
+    margin-left: 12px;
+    position: fixed;
+    border-right: 1px solid black;
+    height: 100%;
+    width: 235px;
+}
+
+.kiri .nav-kiri .logo img {
+    width: 8.3rem;
+    height: 8.3rem;
+}
+
+.kiri .icon-nav {
+    margin-top: -35px;
+    margin-left: 12px;
+}
+
+.kiri .icon-nav .icon {
+    margin-top: 27px;
+  
+}
+.kiri .icon-nav .icon img {
+    width: 23px;
+    height: 23px;
+}
+.kiri .icon-nav .icon span {
+    padding: .7em;
+    font-size: 1.1em;
+}
+
+.kiri .icon-nav .active span {
+    font-size: 1.1em;
+    font-weight: bolder;
+
+}
+
+.kiri .nav-more {
+    margin-top: 70px;
+}
+
+.kiri .nav-more span {
+    font-size: 1.1em;
 }
