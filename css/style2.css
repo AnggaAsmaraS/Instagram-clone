@@ -26,11 +26,11 @@ body {
 }
 
 
-.nav-kiri,
+/* .nav-kiri,
 .content,
 .nav-kanan {
     border: 1px solid black;
-}
+} */
 
 .container {
     display: flex;
@@ -41,6 +41,7 @@ body {
     width: 15rem;
     display: flex;
     flex-direction: column;
+    border-right: 1px solid #c7c7c7;
     /* height: 100%; */
 }
 
