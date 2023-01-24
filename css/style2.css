@@ -305,32 +305,41 @@ height: 42px;
     font-size: 14px;
     color: #262626;
 }
+.nav-kanan .profile .name:hover,
+.nav-kanan .profile .img img:hover  {
+    cursor: pointer;
+}
+
 .nav-kanan .profile .switch {
     position: absolute;
     top: 25px;
     left: 313px;
-    font-size: 12px;
-    color: #8e8e8e;
+    font-size: 11px;
+    color: var(--blue-4);
 }
 .nav-kanan .profile .switch:hover,
-.nav-kanan .profile .recomend span:last-child:hover,
-.nav-kanan .profile .follow .add-user span:last-child:hover  {
+.nav-kanan .profile .follow .add-user span#follow:last-child:hover  {
     cursor: pointer;
-    color: var(--blue-5);
+    color: var(--blue-9);
 }
 
 .nav-kanan .profile .recomend {
-    margin-top: 1.5rem;
+    margin-top: .8rem;
 }
 .nav-kanan .profile .recomend span:first-child {
     font-size: 14px;
-    color: #262626;
+    color: var(--fds-black-alpha-40);
 }
 
 .nav-kanan .profile .recomend span:last-child {
     float: right;
-    font-size: 12px;
-    color: #8e8e8e;
+    font-size: .6em;
+    font-weight: bold;
+    color: var(--fds-black-alpha-80);
+}
+.nav-kanan .profile .recomend span:last-child:hover {
+    cursor: pointer;
+    color: var(--fds-black-alpha-60);
 }
 
 .nav-kanan .profile .follow {
@@ -341,15 +350,38 @@ height: 42px;
 .nav-kanan .profile .follow .add-user {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
-.nav-kanan .profile .follow .add-user span:last-child {
 
-    font-size: 12px;
-    color: #8e8e8e;
+.nav-kanan .profile .follow .add-user .abc {
+    width: 290px;
+    position: relative;
+}
+.nav-kanan .profile .follow .add-user .abc #name {
+    position: absolute;
+    top: -15px;
+}
+.nav-kanan .profile .follow .add-user .abc #name,
+.nav-kanan .profile .follow .add-user img:hover {
+    cursor: pointer;
+}
+
+.nav-kanan .profile .follow .add-user .abc #sugest{
+    position: absolute;
+    font-size: 11px;
+    left: 10px;
+    top: 5px;
+    width: 100px;
+    color: var(--fds-black-alpha-40);
+}
+
+.nav-kanan .profile .follow .add-user span#follow:last-child {
+
+    font-size: 11px;
+    color: var(--blue-4);
     margin-left: 221px;
-
 }
+
 .follow .add-user #name {
     font-size: 12px;
     color: #262626;
