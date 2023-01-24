@@ -26,11 +26,11 @@ body {
 }
 
 
-/* .nav-kiri,
+.nav-kiri,
 .content,
 .nav-kanan {
     border: 1px solid black;
-} */
+}
 
 .container {
     display: flex;
@@ -38,14 +38,14 @@ body {
 }
 
 .nav-kiri {
-    width: 65rem;
+    width: 15rem;
     display: flex;
     flex-direction: column;
     /* height: 100%; */
 }
 
 .nav-kiri .nav-list {
-    width: 250px;
+    width: 240px;
     position: fixed;
 }
 .nav-kiri .logo,
@@ -132,7 +132,7 @@ body {
 
 /* tengah */
 .content {
-    margin: 0 50px 0 126px;
+    margin: 0 50px 0 100px;
     display: flex;
     flex-direction: row;
 }
@@ -275,4 +275,16 @@ height: 42px;
 .content .content-tengah .comments .views-comments:hover,
 .content .content-tengah .comments .name:hover {
     cursor: pointer;
+}
+
+.nav-kanan {
+    display: flex;
+}
+.nav-kanan .profile .img {
+    margin-top: 30px;
+}
+.nav-kanan .img img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
 }
