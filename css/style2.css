@@ -158,8 +158,48 @@ height: 42px;
 .content .header .user img {
     width: 15px;
     height: 15px;
-    opacity: 0;
 }
+.content .story {
+    display: flex;
+} 
+.content .story .insta-story {
+    margin-top: 10px;
+    display: flex;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.content .story .insta-story li {
+   list-style-type: none;
+   position: relative;
+}
+.content .story .insta-story li span {
+    font-size: 14px;
+    color: #262626;
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    left: 8px;
+
+}
+.content .story .insta-story li:nth-child(1n+2) {
+    margin: 0 0 0 20px;
+}
+
+.content .story .insta-story img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border:2px solid transparent ;
+    background: linear-gradient(var(--gradient-lavender), var(--gradient-orange), var(--gradient-pink), var(--gradient-yellow));
+  
+
+}
+.content .story .insta-story img:hover {
+    cursor: pointer;
+}
+
 .content section .user {
    position: relative;
     top: 2px;
