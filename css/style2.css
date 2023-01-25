@@ -278,3 +278,159 @@ height: 42px;
 .content .content-tengah .comments .name:hover {
     cursor: pointer;
 }
+
+.nav-kanan {
+    width: 22.5rem;
+}
+.nav-kanan .profile {
+    display: flex;
+    flex-direction: column;
+}
+.nav-kanan .profile section {
+
+    margin-top: 30px;
+}
+.nav-kanan .profile section header {
+    position: relative;
+    width: 22rem;
+}
+
+.nav-kanan .img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.nav-kanan .profile .name {
+    position: absolute;
+    top: 25px;
+    left: 65px;
+    font-size: 14px;
+    color: #262626;
+}
+.nav-kanan .profile .name:hover,
+.nav-kanan .profile .img img:hover  {
+    cursor: pointer;
+}
+
+.nav-kanan .profile .switch {
+    position: absolute;
+    top: 25px;
+    left: 325px;
+    font-size: 11px;
+    color: var(--blue-4);
+}
+.nav-kanan .profile .switch:hover,
+.nav-kanan .profile .follow .add-user span#follow:last-child:hover  {
+    cursor: pointer;
+    color: var(--blue-9);
+}
+
+.nav-kanan .profile .recomend {
+    margin-top: .8rem;
+}
+.nav-kanan .profile .recomend span:first-child {
+    font-size: 14px;
+    color: var(--fds-black-alpha-40);
+}
+
+.nav-kanan .profile .recomend span:last-child {
+    float: right;
+    font-size: .6em;
+    font-weight: bold;
+    color: var(--fds-black-alpha-80);
+}
+.nav-kanan .profile .recomend span:last-child:hover {
+    cursor: pointer;
+    color: var(--fds-black-alpha-60);
+}
+
+.nav-kanan .profile .follow {
+    margin-top: 1.5rem;
+    position: relative;
+    height: auto;
+}
+.nav-kanan .profile .follow .add-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nav-kanan .profile .follow .add-user .abc {
+    width: 290px;
+    position: relative;
+}
+.nav-kanan .profile .follow .add-user .abc #name {
+    position: absolute;
+    top: -15px;
+}
+.nav-kanan .profile .follow .add-user .abc #name,
+.nav-kanan .profile .follow .add-user img:hover {
+    cursor: pointer;
+}
+
+.nav-kanan .profile .follow .add-user .abc #sugest{
+    position: absolute;
+    font-size: 11px;
+    left: 10px;
+    top: 5px;
+    width: 100px;
+    color: var(--fds-black-alpha-40);
+}
+
+.nav-kanan .profile .follow .add-user span#follow:last-child {
+
+    font-size: 11px;
+    color: var(--blue-4);
+    margin-left: 221px;
+}
+
+.follow .add-user #name {
+    font-size: 12px;
+    color: #262626;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.nav-kanan .profile .follow .add-user img {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+}
+
+.footer nav {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.footer nav ul {
+    line-height: 1rem;
+    display: flex;
+    list-style-type: initial;
+    font-size: 10px;
+    flex-wrap: wrap;
+   
+}
+.footer nav ul li:first-child,
+.footer nav ul li:last-child{
+    list-style-type: none;
+   margin-left: 2px;
+}
+.footer nav ul li {
+    margin: 8px;
+    color: #c7c7c7;
+}
+
+.footer nav ul li a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+.footer nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer .copyright{
+
+    color: #c7c7c7;
+    font-size: 11px;
+}
