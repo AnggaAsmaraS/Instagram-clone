@@ -179,21 +179,28 @@ height: 42px;
     color: #262626;
     position: absolute;
     z-index: 1;
-    top: 65px;
-    left: 8px;
+    top: 70px;
+    left: 13px; 
 
 }
 .content .story .insta-story li:nth-child(1n+2) {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 3px;
 }
 
+.content .story .insta-story .canvas {
+    position: relative;
+    padding: 3px;
+}
 .content .story .insta-story img {
-    width: 56px;
-    height: 56px;
+    width: 54px;
+    height: 54px;
     border-radius: 50%;
-    border:2px solid transparent ;
-    background: linear-gradient(var(--gradient-lavender), var(--gradient-orange), var(--gradient-pink), var(--gradient-yellow));
-  
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    
+
 
 }
 .content .story .insta-story img:hover {
