@@ -118,16 +118,47 @@ body {
 }
 
 /* toogle-more */
-.nav-kiri .toogle {
-    width: 238px;
-    height: 238px;
+.nav-kiri .nav-more .toogle {
+    width: 15rem;
     position: absolute;
     background: #fff;
     border-radius: 6px;
     box-shadow: 1px 1px 1px 1px var(--fds-black-alpha-05),
-    1px 1px 1px 1px var(--fds-black-alpha-05);
+    1px 1px 1px 1px rgba(0, 0, 0, 0.1);
     top: -300px;
+    display: none;
+    
 }
+
+.nav-kiri .nav-more .active  {
+
+    display: block;
+}
+
+.toogle .list-toggle li {
+    margin-bottom: 10px;
+    padding :5px;
+    list-style-type: none;
+    position: relative;
+    border-bottom: 1px solid var(--fds-black-alpha-15);
+}
+.toogle .list-toggle li:hover {
+    background: var(--fds-black-alpha-05);
+}
+.toogle .list-toggle li img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px
+}
+
+.nav-kiri .toogle li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: #262626;
+    line-height: 30px;
+}
+
 
 
 /* animations */

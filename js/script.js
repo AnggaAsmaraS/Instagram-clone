@@ -1,4 +1,20 @@
 let canvasStory = document.querySelectorAll('#story');
+let toogle = document.querySelector(".nav-more");
+
+
+toogle.addEventListener('click', (e) => {
+    let active = document.querySelector('.toogle');
+    let navMore = document.querySelector('.nav-more span');
+
+    
+    active.classList.toggle("active")
+    if (active.classList[1] === "active") {
+        navMore.style.fontWeight = "bold"
+    } else {
+        navMore.style.fontWeight = "normal"
+       
+    }
+})
 
 
 function canvas() {
