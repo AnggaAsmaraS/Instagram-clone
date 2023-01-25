@@ -170,6 +170,15 @@ height: 42px;
     padding: 20px 0;
 }
 
+.content .story .insta-story .right {
+
+}
+
+.content .story .insta-story .right img {
+    width: 20px;
+    height: 20px;
+}
+
 .content .story .insta-story li {
    list-style-type: none;
    position: relative;
