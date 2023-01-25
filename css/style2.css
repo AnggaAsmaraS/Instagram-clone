@@ -117,6 +117,19 @@ body {
     animation: zoomin .1s forwards;
 }
 
+/* toogle-more */
+.nav-kiri .toogle {
+    width: 238px;
+    height: 238px;
+    position: absolute;
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px var(--fds-black-alpha-05),
+    1px 1px 1px 1px var(--fds-black-alpha-05);
+    top: -300px;
+}
+
+
 /* animations */
 
 @keyframes zoomin {
