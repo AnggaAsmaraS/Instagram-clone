@@ -206,6 +206,7 @@ height: 42px;
 }
 .content .story {
     display: flex;
+    position: relative;
 } 
 .content .story .insta-story {
     margin-top: 10px;
@@ -213,7 +214,50 @@ height: 42px;
     margin-bottom: 5px;
     overflow: hidden;
     padding: 20px 0;
+
 }
+
+.content .story .left {
+    position: absolute;
+    z-index: 2;
+    top: 51px;
+    left: 1px;
+    display: none;
+}
+
+
+.content .story .left img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+   background: var(--fds-black-alpha-40);
+   box-shadow: 1px 1px 1px 1px var(--fds-black-alpha-40), 1px 1px 1px 1px var(--fds-black-alpha-50), 1px 1px 1px var(--fds-black-alpha-10);
+ 
+}
+.content .story .right {
+    position: absolute;
+    right: 1px;
+    top: 51px;
+    display: none;
+  
+}
+.content .story .right:hover,
+.content .story .left:hover {
+    cursor: pointer;
+    
+}
+.content .story .right img {
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+    top: 25px;
+    left: 2px;
+    border-radius: 50%;
+   background: var(--fds-black-alpha-40);
+   box-shadow: 1px 1px 1px 1px var(--fds-black-alpha-40), 1px 1px 1px 1px var(--fds-black-alpha-50), 1px 1px 1px var(--fds-black-alpha-10);
+    
+}
+
 
 .content .story .insta-story li {
    list-style-type: none;
@@ -236,7 +280,7 @@ height: 42px;
     position: relative;
     padding: 3px;
 }
-.content .story .insta-story img {
+.content .story .insta-story .canvas img {
     width: 54px;
     height: 54px;
     border-radius: 50%;

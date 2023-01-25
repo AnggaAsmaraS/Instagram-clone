@@ -38,3 +38,46 @@ function canvas() {
 
 }
 canvas();
+
+//function box-shadow kiri
+let left = document.querySelector('.left');
+
+left.addEventListener('click', (e) => {
+    scroll.scrollBy(-200, 0);
+    left.style.boxShadow = "0px 0px 1px 1px var(--fds-black-alpha-10),0px 0px 1px 1px var(--fds-black-alpha-10),0px 0px 1px var(--fds-black-alpha-10)";
+    left.style.borderRadius = "50%";
+    setInterval(function () {
+      left.style.boxShadow = " 1px 1px 1px 1px var(--fds-black-alpha-40), 1px 1px 1px 1px var(--fds-black-alpha-50), 1px 1px 1px var(--fds-black-alpha-10)"
+
+     
+    }, 500)
+})
+
+//function box-shadow kanan
+let right = document.querySelector('.right');
+let scroll = document.querySelector('.insta-story');
+right.addEventListener('click', (e) => {
+
+    scroll.scrollBy(200, 0);
+    right.style.boxShadow = "0px 0px 1px 1px var(--fds-black-alpha-10),0px 0px 1px 1px var(--fds-black-alpha-10),0px 0px 1px var(--fds-black-alpha-10)";
+    right.style.borderRadius = "50%";
+
+    setInterval(function () {
+        right.style.boxShadow = " 1px 1px 1px 1px var(--fds-black-alpha-40), 1px 1px 1px 1px var(--fds-black-alpha-50), 1px 1px 1px var(--fds-black-alpha-10)"
+  
+       
+      }, 500)
+})
+
+//function hover
+let hover = document.querySelector('.story');
+
+hover.addEventListener('mouseover', () => {
+    right.style.display = "block";
+    left.style.display = "block";
+})
+
+hover.addEventListener('mouseout', () => {
+    right.style.display = "none";
+    left.style.display = "none";
+})
